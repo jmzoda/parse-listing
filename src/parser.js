@@ -6,6 +6,8 @@
 
 "use strict";
 
+var utf8 = require('utf8');
+
 /**
  * this is the regular expression used by Unix Parsers.
  *
@@ -135,6 +137,7 @@ exports.parseFtpEntries = function parseFtpEntries(listing, callback) {
       }
     }
     else if (parsedEntry) {
+      parsedEntry.name = utf8.decode(parsedEntry.name);
       parsed.push(parsedEntry);
     }
   });
