@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/sergi/parse-listing/issues"
   },
-  "dependencies": {
+  "dependencies": { 
     "utf8": "^2.1.0"
   }, 
   "devDependencies": {
